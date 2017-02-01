@@ -17,6 +17,7 @@ An ARM Docker Container for [firefly-iii](https://github.com/firefly-iii/firefly
 6. Profit!
 
 ## Known issues
+* Due to the use of volumes, the database is slow as fuck. Starting the first time takes about 20 years. 
 * This container appears to have Apache included. The webapp is running on Nginx, making the Apache2 install redundant.
 * This container is running both the webserver and the database. You might want to split this up sometime. Or not. idk
 * Hardcoded Firefly-III version
