@@ -1,5 +1,5 @@
 #!/bin/bash
-
+/etc/init.d/mysql start
 cp "/var/firefly/env" .env
 env | grep "^FIREFLY_CONFIG_" | sed 's/FIREFLY_CONFIG_//' >> .env
 
